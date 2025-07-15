@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+        <!--Username Input Types-->
+        <label for="name">Username</label>
+        <input type="text" name="username" placeholder="Enter your username" id="name" required>
+        <br>
+
+        <!--Password Input Types-->
+        <label for="pass">Password</label>
+        <input type="password" name="password" placeholder="Enter your password" id="pass" required> 
+        <br>
+
+        <!--Number Input Types-->
+        <label for="num">Mobile no.</label>
+        <input type="number" name="number" placeholder="Enter your number" id="num" required>
+        <br>
+
+        <!--Email Input Types-->
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter your email" id="email" required>
+        <br>
+
+        <!--Color Input Types-->
+        <label for="color">Color</label>
+        <input type="color" name="color" placeholder="Choose a color" id="color" required>
+        <br>
+
+        <!--Date Input Types-->
+        <label for="date"></label>
+        <input type="date" name="date" id="date" required>
+        <br>
+
+        <!--Date and time Input Types-->
+        <label for="datetime"></label>
+        <input type="datetime-local" name="datetime" id="datetime" required>
+        <br>
+
+        <!--File Input Types-->
+        <label for="file">File</label>
+        <input type="file" name="file" id="file">
+        <br>
+
+        <!--Checkbox Input Types-->
+        <input type="checkbox" name="age" id="check" required>
+        <label for="check">I am 18+</label>
+        <br>
+        
+        <!--Radio Input Types-->
+        <input type="radio" name="fruit" value="apple" id="apple">
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" value="banana" id="banana">
+        <label for="banana">Banana</label>
+        <input type="radio" name="fruit" value="orange" id="orange">
+        <label for="orange">Orange</label>
+        <br>
+
+        <!--Checkbox Input Types-->
+        <div>
+            Choose your subjects:
+            <input type="checkbox" name="subject" value="math" id="math">
+            <label for="math">Math</label>
+            <input type="checkbox" name="subject" value="science" id="science">
+            <label for="science">Science</label>
+            <input type="checkbox" name="subject" value="history" id="history">
+            <label for="history">History</label>
+            <input type="checkbox" name="subject" value="english" id="english">
+            <label for="english">English</label>
+        </div>
+
+        <!--Select Input Types-->
+        <div>
+            Select your profession:
+            <select name="profession" id="profession">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="engineer">Engineer</option>
+                <option value="doctor">Doctor</option>
+                <option value="artist">Artist</option>
+            </select>
+        </div>
+        
+        <!--Range Input Types-->
+        <div>
+            <label for="vol">Select your volume level :</label>
+            <input type="range" name="volume" id="vol" min="0" max="100" step="10" >
+        </div>
+        
+        <!--Textarea Input Types-->
+        <div>
+            <label for="feedback">Please give your valuable feedback :</label>
+            <textarea name="feedback" id="feedback" rows="4" cols="50" placeholder="Enter your feedback here"></textarea>
+        
+        </div>
+
+        <!--Button Input Types-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+    </form>
+</body>
+</html>
